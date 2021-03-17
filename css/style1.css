@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+  font-size: 62.5%;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.disabled {
+  overflow-x: hidden; 
+  overflow-y: scroll; 
+}
+
+body {
+  background-image: url(../images/pc.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  position: relative;
+  overflow-x: hidden; 
+  overflow-y: scroll; 
+}
+
+/* Sudo class */
+span.logo {
+  display: inline-block;
+  padding: 6rem 2rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.3rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #d8d8d8;
+  cursor: pointer;
+}
+
+a.icon {
+  display: inline-block;
+  position: fixed;
+  font-size: 3.0rem;
+  color: #d8d8d8;
+  right: 1%;
+  cursor: pointer;
+}
+
+h1 span {
+  color: #767676;
+}
+
+h1 {
+  font-size: 5rem;
+  width: 36%;
+  font-family: 'Lato', sans-serif;
+  padding-top: 3rem;
+  line-height: 1.7;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  text-align: start;
+  margin-bottom: 1.5.rem;
+  z-index: 3;
+}
+
+.name {
+  font-size: 3rem;
+  font-family: 'Lato', sans-serif;
+  color: #767676;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  line-height: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.container {
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.container1 {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  /* display: none; */
+  overflow: hidden;
+  position: fixed;
+  left: 65%;
+  top: 0.3rem;
+  z-index: 1000;
+}
+
+ul  {
+  font-size: 2.2rem;
+  display: flex;
+  /* position: fixed; */
+  margin: 1.2rem;
+  padding: 1.8rem 1.2rem;
+  list-style: none;
+}
+
+ul li {
+  padding: 2.2rem 2.2rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.2rem;
+  color: #d8d8d8;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #d8d8d8;
+}
+
+ul li a:hover {
+  color: red;
+}
+
+.buttons-container{
+  padding-top: 6rem;
+}
+
+
+.blue-button {
+  display: inline-block;
+  background-color: blue;
+  margin-top: 3rem;
+  margin-right: 1.2rem;
+  border: 0.6rem;
+  border-radius: 0.3rem;
+  width: 15rem;
+  height: 5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  z-index: 3;
+}
+
+
+
+
+.black-button {
+  display: inline-block;
+  background-color: #000;
+  border: 0.5px solid #fff;
+  width: 15rem;
+  height: 5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  /* -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem; */
+  letter-spacing: 0.2rem;
+  z-index: 3;
+}
+
+.blue-button a {
+  color: #fff;
+}
+
+.black-button a {
+  color: #fff;
+}
+.buttons-container a {
+  text-decoration: none;
+}
+
+.blue-button:hover a {
+  color: red;
+}
+.black-button:hover a {
+  color: red;
+}
+
+#menuicon {
+  position: absolute;
+  display: none;
+  font-size: 2.9rem;
+  left: 1650px;
+  bottom: 780px;
+  width: 4rem;
+  cursor: pointer;
+}
+
+#menuicon:hover{
+  color: red;
+  z-index: 3;
+}
+
+
+/* Media Query for smartphones  the all have width below 500*/
+
+@media(max-width:768px) {
+  .navbar {
+    display: none;
+  }
+  
+}
+
