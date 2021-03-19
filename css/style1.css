@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 html {
   font-size: 62.5%;
   color: #fff;
   height: 100vh;
   width: 100vw;
+  font-family: "Lato", sans-serif;
 }
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 div.disabled {
-  overflow-x: hidden; 
-  overflow-y: scroll; 
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -24,17 +26,16 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat:no-repeat ;
+  background-repeat: no-repeat;
   position: relative;
-  overflow-x: hidden; 
-  overflow-y: scroll; 
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* Sudo class */
 span.logo {
   display: inline-block;
   padding: 6rem 2rem;
-  font-family: 'Lato', sans-serif;
   letter-spacing: 0.3rem;
   font-weight: bolder;
   font-size: 2rem;
@@ -45,7 +46,7 @@ span.logo {
 a.icon {
   display: inline-block;
   position: fixed;
-  font-size: 3.0rem;
+  font-size: 3rem;
   color: #d8d8d8;
   right: 1%;
   cursor: pointer;
@@ -58,7 +59,6 @@ h1 span {
 h1 {
   font-size: 5rem;
   width: 36%;
-  font-family: 'Lato', sans-serif;
   padding-top: 3rem;
   line-height: 1.7;
   font-weight: 500;
@@ -71,14 +71,12 @@ h1 {
 
 .name {
   font-size: 3rem;
-  font-family: 'Lato', sans-serif;
   color: #767676;
   letter-spacing: 0.3rem;
   font-weight: 600;
   line-height: 4.5rem;
   margin-bottom: 1.5rem;
 }
-
 
 .container {
   height: 100vh;
@@ -105,7 +103,7 @@ header {
   z-index: 1000;
 }
 
-ul  {
+ul {
   font-size: 2.2rem;
   display: flex;
   /* position: fixed; */
@@ -116,7 +114,6 @@ ul  {
 
 ul li {
   padding: 2.2rem 2.2rem;
-  font-family: 'Lato', sans-serif;
   font-size: 2.2rem;
   color: #d8d8d8;
   letter-spacing: 0.2rem;
@@ -133,21 +130,18 @@ ul li a:hover {
   color: red;
 }
 
-.buttons-container{
+.buttons-container {
   padding-top: 6rem;
 }
 
-
-.blue-button {
+.button {
   display: inline-block;
-  background-color: blue;
   margin-top: 3rem;
   margin-right: 1.2rem;
   border: 0.6rem;
   border-radius: 0.3rem;
   width: 15rem;
   height: 5rem;
-  font-family: 'Lato', sans-serif;
   font-size: 1.7rem;
   letter-spacing: 0.2rem;
   font-weight: 500;
@@ -158,41 +152,24 @@ ul li a:hover {
   z-index: 3;
 }
 
-
-
+.blue-button {
+  background-color: blue;
+}
 
 .black-button {
-  display: inline-block;
   background-color: #000;
   border: 0.5px solid #fff;
-  width: 15rem;
-  height: 5rem;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.7rem;
-  font-weight: 500;
-  /* -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem; */
-  letter-spacing: 0.2rem;
-  z-index: 3;
 }
 
-.blue-button a {
+.button a {
   color: #fff;
 }
 
-.black-button a {
-  color: #fff;
-}
 .buttons-container a {
   text-decoration: none;
 }
 
-.blue-button:hover a {
-  color: red;
-}
-.black-button:hover a {
+.button:hover a {
   color: red;
 }
 
@@ -206,18 +183,15 @@ ul li a:hover {
   cursor: pointer;
 }
 
-#menuicon:hover{
+#menuicon:hover {
   color: red;
   z-index: 3;
 }
 
-
 /* Media Query for smartphones  the all have width below 500*/
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .navbar {
     display: none;
   }
-  
 }
-
